@@ -12,9 +12,8 @@ body{
 }
 .header{
   background-color: #635854;
-  padding-top: 12px;
-  padding-bottom: 12px;
   border-bottom: 4px solid #3596F5;
+  
 }
 .navbar{
   max-width: 1280px;
@@ -22,6 +21,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 56px;
 }
 .navbar-menu{
   margin: 0;
@@ -31,13 +31,27 @@ body{
   text-align: center;
 }
 .navbar-item{
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 56px;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: background-color 0.2s;
+}
+.navbar-item-active{
+  background-color: #3596F5;
+}
+.navbar-item:hover{
+  background-color: #3596F5;
 }
 .navbar-link{
   text-decoration: none;
   color: #fff;
+  display: flex;
+  height: 56px;
+  align-items: center;
 }
+.navbar-item{}
 .navbar-contacts{
   text-align: right;
 }
@@ -206,4 +220,77 @@ path.current-floor{
   cursor: pointer;
   border: none;
   background-color: #fff;
+}
+.main{
+  margin-bottom: 100px;
+}
+.footer{
+ padding-top: 50px;
+ padding-bottom: 56px;
+ background: #D7D7D7;
+ border-top: 4px solid #3596F5; 
+}
+.footer-wrapper{
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-contacts{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-tel{
+  display: flex;
+  flex-direction: column;
+}
+.footer-social{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.footer-logo{
+  margin-right: 37px;
+}
+.footer-tel{
+  margin-right: 59px;
+}
+.social-link{
+  margin-right: 15px;
+}
+.footer-text{
+  font-size: 14px;
+  line-height: 16px;
+  color: #635854;
+  margin-bottom: 5px;
+}
+.footer-number{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #635854;
+  text-decoration: none;
+}
+.footer-links{
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+.footer-list{
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 20px;
+}
+.footer-list-link{
+  text-decoration-line: underline;
+  color: #635854;
+}
+.footer-list:last-child{
+  margin-right: 0;
+}
+.footer-list-social:not(:last-child){
+  margin-right: 5px;
 }
