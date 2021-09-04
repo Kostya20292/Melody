@@ -74,6 +74,7 @@ body{
   margin: auto;
   padding-top: 54px;
   display: flex;
+  margin-bottom: 100px;
 }
 .main-info{
   flex-grow: 1;
@@ -205,6 +206,10 @@ path.current-floor{
   color: #3596F5;
   text-decoration: underline;
 }
+.flat-link-active{
+  color: #3596F5;
+  text-decoration: underline;
+}
 .modal-alert{
   font-style: italic;
   font-weight: normal;
@@ -220,9 +225,6 @@ path.current-floor{
   cursor: pointer;
   border: none;
   background-color: #fff;
-}
-.main{
-  margin-bottom: 100px;
 }
 .footer{
  padding-top: 50px;
@@ -293,4 +295,122 @@ path.current-floor{
 }
 .footer-list-social:not(:last-child){
   margin-right: 5px;
+}
+.flats path {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.flats path:hover {
+    opacity: 1;
+}
+
+.flats path.current-flat { opacity: 1; }
+
+.flat-link.current-flat {
+    color: #3596F5;
+    text-decoration: underline;
+}
+.button-menu{
+  border: none;
+  background-color: #635854;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1400px) {
+  .navbar{
+    padding: 0 10px;
+  }
+  .footer-wrapper{
+    padding: 0 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar{
+    justify-content: space-around;
+  }
+  .navbar-contacts{
+    display: none;
+  }
+  .main{
+    display: block;
+  }
+  .main-image{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 50px;
+  }
+  .main-title{
+    margin-bottom: 20px;
+  }
+  .main-image{
+    margin-bottom: 0;
+  }
+  .button-primary{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar{
+    justify-content: space-between;
+  }
+  .navbar-nav{
+    display: none;
+  }
+  .button-menu{
+    display: block;
+  }
+  .footer-links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-list{
+    margin: 0;
+  }
+  .footer-wrapper{
+    justify-content: center;
+  }
+  .footer-contacts{
+    margin-right: 10px;
+  }
+  .modal-image{
+    max-width: auto;
+    width: 100%;
+  }
+  .modal-info{
+    display: none;
+  }
+  .modal-close-button{
+    background-color: #EBEBEB
+  }
+} 
+
+@media (max-width: 768px) {
+  .main{
+    padding-top: 0;
+  }
+  .footer-wrapper{
+    flex-direction: column;
+  }
+  .footer-contacts{
+    margin-right: 0;
+  }
+  .footer-tel{
+    margin-right: 20px;
+  }
+  .modal-image{
+    padding: 0;
+  }
+}
+@media (max-width: 440px){
+  .footer-tel{
+    display: none;
+  } 
+}
+@media (max-width: 320px){
+  .modal-image{
+    width: auto;
+  }
 }
